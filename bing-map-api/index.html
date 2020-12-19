@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Map</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <!-- jsFiddle will insert css and js -->
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+
+    <input type="text" id="map-search" name="fname">
+    <div id="map">
+        <div>
+          <!--styling the height and width of the map-->
+            <iframe id="map-iframe" width="500" height="400" frameborder="0" src="https://www.bing.com/maps/embed?h=400&w=500&cp=-32.526901245117188~115.72170257568359&lvl=11&typ=d&sty=r&src=SHELL&FORM=MBEDV8" scrolling="no">
+            </iframe>
+            <div style="white-space: nowrap; text-align: center; width: 500px; padding: 6px 0;">
+              <!--targeting the url from bing map-->
+               <a id="largeMapLink" target="_blank" href="https://www.bing.com/maps?cp=-31.98089999999999~115.7996&amp;sty=r&amp;lvl=11&amp;FORM=MBEDLD">View Larger Map</a> &nbsp; | &nbsp;
+               <a id="dirMapLink" target="_blank" href="https://www.bing.com/maps/directions?cp=-31.98089999999999~115.7996&amp;sty=r&amp;lvl=11&amp;rtp=~pos.-31.98089999999999_115.7996____&amp;FORM=MBEDLD">Get Directions</a>
+           </div>
+       </div>
+    </div>
+    <!--jquery source url-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--local javascript source-->
+    <script src="script.js"></script>
+
+  </body>
+</html>
