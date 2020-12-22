@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/*body*/
+body {
+    background-color: #d9dcd6;
+
+}
+
+
+
+/* This is header*/
+
+.pure-menu{
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: rgb(252,218,142);
+    background: linear-gradient(90deg, rgba(252,218,142,1) 0%, rgba(252,142,142,1) 100%);
+    color: #ffffff;
+}
+.pure-menu-link {
+    color: white;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+ul {
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ 
+}
+
+.banner {
+    background: transparent url('https://images.unsplash.com/photo-1499415479124-43c32433a620?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1189&q=80') 0 0 no-repeat fixed;
+    background-size: cover;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://24.media.tumblr.com/ccb268832580ac12951828a1c179de69/tumblr_mo2xbk8JUK1st5lhmo1_1280.jpg', sizingMethod='scale');
+    height: 500px;
+    width: 100%;
+    margin-bottom: 3em;
+    display: table;
+}
+
+.banner-head {
+    display: table-cell;
+    vertical-align: middle;
+    margin-bottom: 0;
+    font-size: 2em;
+    color: white;
+    font-weight: 500;
+    text-shadow: 0 1px 1px black;
+ }
+
+
+.search{
+    position: absolute;
+    top: -9%;
+    left: 50%;
+    transform:  translate(-50%,50%);
+    background: white;
+    height: 40px;
+    border-radius: 40px;
+    padding-bottom: 80px;
+    padding-top:30px;
+    padding-right:1px;
+
+}
+
+.search:hover > .searchInput {
+    width: 240px;
+    padding: 0 6px;
+}
+
+
+
+.searchButton {
+    color: white;
+    float: right;
+    width: 50px;
+    height: 60px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;   
+}
+
+.searchInput {
+    border:none;
+    background: none;
+    outline:none;
+    float:left;
+    padding: 0;
+    color: black;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 20px;
+    width: 0px;
+    text-align: center;
+
+}
+.btn {
+    color:white;
+    font-size:small;
+}
+
+@media screen and (max-width: 620px) {
+.search:hover > .searchInput {
+    width: 150px;
+    padding: 0 6px;
+}
+}
